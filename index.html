@@ -21,7 +21,12 @@
 	<!--Get that slideshow moving-->
 	<script>
 	    jQuery(document).ready(function ($) {
-	        var options = { $AutoPlay: true };
+			var options = {
+			            $ArrowNavigatorOptions: {
+			                $Class: $JssorArrowNavigator$,
+			                $ChanceToShow: 2
+			            }
+			        };
 	        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 	    });
 	</script>
@@ -88,8 +93,16 @@
 	        <div><img u="image" src="IMG_0906.JPG" /></div>
 	        <div><img u="image" src="AC27.jpg" /></div>
 			<div><img u="image" src="Maps.png" /></div>
-			<div><img u="image" src="TedTalkPhoto.jpg" /></div>
+			<div><img u="image" src="TedTalkPhoto.png" /></div>
 	    </div>
+		<!-- Arrow Left -->
+		<span u="arrowleft" class="jssora02l"
+		style="width: 55px; height: 55px; top: 122px; left: 8px;">
+		</span>
+		<!-- Arrow Right -->
+		<span u="arrowright" class="jssora02r"
+		style="width: 55px; height: 55px; top: 122px; right: 8px;">
+		</span>
 	</div>
 </div>
 
