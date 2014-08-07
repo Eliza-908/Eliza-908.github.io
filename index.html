@@ -8,10 +8,6 @@
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 	  
 	  <style>
-	  IMG.displayed {
-	      display: block;
-	      margin-left: auto;
-	      margin-right: auto }
 		#login {
 			background-color:red;
 			border-color:red;
@@ -22,7 +18,7 @@
 	  </style>
 	 
 	  <script src="Jssor/js/jquery-2.1.0.min.js"></script>
-	<!--Slideshow script not working right now-->
+	<!--Get that slideshow moving-->
 	<script>
 	    jQuery(document).ready(function ($) {
 	        var options = { $AutoPlay: true };
@@ -85,12 +81,14 @@
 <!--Images that indicate major accomplishments and draw the viewer in. One slideshow that runs in a loop but can be navigated by the user. Unsure whether they link to anything.-->
 <div class="hero-unit">
     
-<!--Still trying to get this slideshow to work-->
+<!--Now the slideshow works-->
 	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
 	    <!-- Slides Container -->
-	    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+	    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 300px; top: 0px; width: 600px; height: 300px;">
 	        <div><img u="image" src="IMG_0906.JPG" /></div>
 	        <div><img u="image" src="AC27.jpg" /></div>
+			<div><img u="image" src="Maps.png" /></div>
+			<div><img u="image" src="TedTalkPhoto.jpg" /></div>
 	    </div>
 	</div>
 </div>
@@ -146,7 +144,7 @@
 <!--Site map has the same links as the navBar. Should be in 3 columns equally spaced columns, currently in one. -->
 <hr>
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-sm-4">
 	<h4>Who We Are</h4>
 	<ul> 
 		<li><a href="Home.html">About Us</a></li>
@@ -155,7 +153,7 @@
 		<li><a href="Home.html">Bios</a></li>
 	</ul>
 </div>
-<div class="col-md-4">
+<div class="col-sm-4">
 	<h4>Our Approach</h4>
 	<ul> 
 		<li><a href="Home.html">Unique Databases</a></li>
@@ -163,7 +161,7 @@
 		<li><a href="Home.html">Data-to-Decision</a></li>
 	</ul>
 </div>
-<div class="col-md-4">
+<div class="col-sm-4">
 	<h4>Projects</h4>
 	<ul> 
 		<li><a href="Home.html">Impact Investing</a></li>
