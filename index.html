@@ -22,6 +22,16 @@
 		#title {
 			text-align:center;
 		}
+		.footerul {
+			list-style-type:none;
+			padding:0;
+			margin:0;
+			color:white;
+		}
+		#sitemap {
+			background-color:#BDBDBD;
+			color:white;
+		}
 	  </style>
       <style>
           .jssora02l, .jssora02r, .jssora02ldn, .jssora02rdn
@@ -47,9 +57,9 @@
 	<!--Get that slideshow moving-->
     <script>
         jssor_slider1_starter = function (containerId) {
-
-            var options = {
 				$Autoplay:true,
+            var options = {
+				
 				$AutoplayInterval:3000,
                 $DragOrientation: 3,                               
                 $SlideDuration: 800,                               
@@ -70,7 +80,7 @@
 <!--Header with logo that links to the homepage and the login button. Can discuss cool hover features and such.-->
 <body>
 	<div class="container-fluid">
-	<a href="index.html"><img src='http://www.novametricsllc.com/images/Novametrics-logo.png' alt='not found' width=200 height=100></a>
+	<a href="index.html"><img src='http://www.novametricsllc.com/images/Novametrics-logo.png' alt='not found' width=200 height=60></a>
 	<a href="#" class="btn btn-large btn-success" id="login"><strong>Log In</strong></a>
 
 <!--Navigation bar to direct the user around the website. Drop down menus, should be in a row but are currently in a column.-->
@@ -121,7 +131,7 @@
 <div class="hero-unit">
     
 <!--Now the slideshow works-->
-	<div id="slider1_container" style="position: relative; top: 0px; margin-left:auto; margin-right:auto; width: 99%; height: 450px;">
+	<div id="slider1_container" style="position: relative; top: 0px; width: 99%; height: 450px;">
 	    <!-- Slides Container -->
 	    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 99%; height: 450px;">
 	        <div><img u="image" src="IMG_0906.JPG" /></div>
@@ -171,7 +181,7 @@
 <!--Direct links to the cool data analysis images we can create, without the full context. Right now it is more or less another menu, ideally would have little boxes come out to the right of the list.-->
 <hr>
 
-<h2 id="title"> DATA DEMONSTRATIONS </h2>
+<h2 id="title"> DATA-TO-DECISIONS </h2>
 <div class="row">
 	<div class="col-md-4">
 <div class="navbar-default sidebar" role="navigation">
@@ -203,10 +213,10 @@
 
 <!--Site map has the same links as the navBar. Should be in 3 columns equally spaced columns, currently in one. -->
 <hr>
-<div class="row">
+<div class="row" id="sitemap">
 	<div class="col-sm-4">
 	<h4>Who We Are</h4>
-	<ul> 
+	<ul class="footerul"> 
 		<li><a href="index.html">About Us</a></li>
 		<li><a href="index.html">History</a></li>
 		<li><a href="index.html">Vision</a></li>
@@ -215,7 +225,7 @@
 </div>
 <div class="col-sm-4">
 	<h4>Our Approach</h4>
-	<ul> 
+	<ul class="footerul"> 
 		<li><a href="index.html">Unique Databases</a></li>
 		<li><a href="index.html">Innovative Methodologies</a></li>
 		<li><a href="index.html">Data-to-Decision</a></li>
@@ -223,7 +233,7 @@
 </div>
 <div class="col-sm-4">
 	<h4>Projects</h4>
-	<ul> 
+	<ul class="footerul"> 
 		<li><a href="index.html">Impact Investing</a></li>
 		<li><a href="index.html">Emerging Threats</a></li>
 		<li><a href="index.html">Aid & Development</a></li>
